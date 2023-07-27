@@ -1,3 +1,3 @@
-const CONTACTS = 'contacts'
+const CONTACTS = 'contacts';
 
-export {CONTACTS}
+export { CONTACTS };
