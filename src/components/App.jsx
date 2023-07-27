@@ -15,12 +15,12 @@ export const App = () => {
   const [filter, setFilter] = useState('');
   const prevContactsRef = useRef([]);
 
-  useEffect(() => {
-    const contactsParsed = storage.load(storageKeys.CONTACTS);
-    if (contactsParsed) {
-      setContacts(contactsParsed);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const contactsParsed = storage.load(storageKeys.CONTACTS);
+  //   if (contactsParsed) {
+  //     setContacts(contactsParsed);
+  //   }
+  // }, []);
 
   useEffect(() => {
     contacts && storage.save(storageKeys.CONTACTS, contacts);
